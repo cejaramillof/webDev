@@ -1,0 +1,96 @@
+Principios Solid
+Agile Software Development (Principles, Patterns, and Practices) - Robert C. Martin (Uncle Bob) 2002
+Acronimo (SOLID) Michael Feathers
+S - Single responsability Principles (SRP) - Unica responsabilidad
+"A class should have only one reason to change" - Robert C. Martin
+Cohesión: Grado en el que el contenido de un modulo está relacionado entre sí.
+Mantenibilidad y Usabilidad
+
+O - Open/Closed Principle (OCP) 
+Software entities (class, modules, functions, etc) should be open for extensión but closed for modifications
+Bad:
+Class Pintor {
+	void pinta(Collection<Figura> figuras)
+		For (Figura figura: figuras){
+			if (figura instanceof Cuadrado){
+				pinta((Cuadrado) figura);
+			}else if (figura instanceof Circulo){
+				pinta((Circulo) figura);
+			}
+		}
+}
+
+void pinta(Cuadrado cuadrado) {
+	//..	
+}
+void pinta(Circulo circulo) {
+	//..
+}
+Class Figura {}
+Class Cuadrado extends Figura {}
+Class Circulo extends Figura {}	
+Good:
+Class Pintor {
+	void pinta (Collection<Figura> figuras) {
+		for (Figura figura: figuras) {
+			figura.pinta();
+		}
+	}
+}
+Interface Figura {
+	void pinta();
+}
+
+Class Cuadrado Implements Figura {
+	@Override
+	public void pinta(){
+		//..
+	}
+}
+
+Class Circulo Implements Figura {
+	@Override
+	public void pinta(){
+		//..
+	}
+}
+
+L - Liskov Substitution Principle
+"Subtype Requeriment: Let (X) be a property provable about objects X of type T. Then (Y) should be true for objects of type S where S is a subtype of T" - Barbara Liskov
+
+Class T 
+Class S extends
+
+T obj = new T();
+T obj = new S();
+
+
+
+I - Interface Segregation Principle
+"Clients should not be forced to depend on  methods they do not use" - Robert C. Martin
+
+D - Dependency Inversion Principle
+"High-level modules should not depend on low-level modules. Both should depend on abstractions"  - Robert C. Martin
+"Abstractions should not depend upon details. Details should depend upon abstractions" - Robert C. Martin
+
+Capa:
+	Logica de negocio: -> api op. basicas
+
+Capa:
+	Operaciones básicas: -> api acceso F.S.
+
+Capa: 
+	Acceso F.S.
+	
+Crear abstracciones para cada servicio de los modulos inferiores, un cambio en la API de operaciones básicas debería ser iniciado en la capa logica de negocio.
+
+Usualmente: 
+Tarea compleja -> Tarea menos compleja (1) -> Detalle 1
+										   -> Detalle N
+			   -> Tarea menos compleja (2) -> Detalle X
+			   
+Mal:
+Módulo de alto nivel Depende -> Módulo de bajo nivel
+
+Bien:
+Módulo de alto nivel <- Depende Módulo de bajo nivel

@@ -1,0 +1,31 @@
+SMACSS
+ATOMIC DESIGN
+OOCSS 
+	Clases
+	Nunca estilos en línea
+	HTML <> CSS
+		Separar estructura de la piel
+		Separar contenedor del contenido
+	
+
+
+OOCSS -- BEM -- SMACSS
+
+BEM
+.navigator__link--active
+	BLOCK (ELEMENTO BASE) - COMPONENTE .navigator
+	ELEMENT (DEPENDE DEL BLOQUE PARA EXISTIR) __link
+	MODIFIER (VARIANTE) --active
+	
+.card
+.card__image
+.card__description
+.card__button--success
+.card__button--back
+
+.button
+
+.button button--state-success
+
+7 reglas
+Establecer reglas

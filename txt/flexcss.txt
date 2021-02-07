@@ -1,0 +1,21 @@
+flex
+
+fxLayout= 
+	(default)
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	
+fxLayout="column: wrap"
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+fxLayout="row: wrap" 
+
+				   main/cross
+fxLayoutAlign="flex-start center"
+	justify-content: flex-start;
+	align-items: center;
+	
+	
+flex items

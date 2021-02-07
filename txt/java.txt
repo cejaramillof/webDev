@@ -1,0 +1,58 @@
+Java (Distribuido)(MultiHilos) by (Sun Microsystems) (OAK) James Gosling - 2009 Oracle 
+Android extensión de java llamada Dalvik
+Basado en C (Estructurado) y C++ 
+Orientado a Objetos
+   Herencia simple, manejo de memoria de manera dinamica
+SDK Sofware Development Kit (Crear, compilar y ejecutar)
+
+JSE (Java Standar Edition) (Aplicaciones de escritorio) 
+Applets (navegador web)
+Aplicaciones Distribuidas
+Aplicaciones Independientes
+
+JEE (Java Enterprise Edition) (Aplicaciones Empresariales de servidor) J2EE
+Aplicaciones Empresariales con alto nivel transaccional
+Comercio Electrónico
+Aplicaciones Web
+
+JME (Java Micro Edition) (Celulares y dispositivos móviles) Dispositivos con menor capacidad de procesamiento/almacenamiento
+Celulares
+PDAs
+Televisores
+Microships (Navegación, cámaras de seguridad, routers, etc.)
+
+
+Código fuente (.java)
+Codigo compilado (.class o Bytecode) (javac)
+
+Tiempo de ejecución:
+	Carga en memoria (.class) 
+	Verifica por Bytecode
+	Interprete ejecuta
+
+JRE (Java Runtime Environment)
+JDK (Java Development Kit)
+
+
+Tipos en Java
+
+Tipos Primitivos
+	Enteros
+		Byte (8 bits) // 0
+		Short (16 bits) // 0
+		Char (16 bits) Unicode // \u0000
+		Int (32 bits) // 0
+		Long (64 bits) // 0
+	Flotantes
+		Float (32 bits) // 0.0
+		Double (64 bits) // 0.0
+	Boolean
+		False o True // false
+		
+Tipos Referenciados (Tipos Object)
+	String
+		No hay sobrecarga de operadores, exceptuando (String)(Concatena)
+		
+	Clases
+	Interfaces
+	Arreglos
