@@ -1248,3 +1248,18 @@ Retina display es una marca comercial de Apple pero hace referencia a la cantida
 
 Entonces algunas imagenes cuando las ves en una pantalla con el doble de densidad de pixeles, como un celular se pixelean, solucionaremos esto sencillamente con el atributo srcset y redimensionando las imágenes para que tengan el doble de tamaño. También podemos comprimir esta imagen alternativa.
 **srcset="images/hero.png, images/config.png 2x"** Recibe multiples imagenes, o si no encuentra como fallback tomará el src normal.
+  
+  
+  
+  
+# test types
+- Unit testing
+- Integration testing
+- Acceptance testing
+- Mutant testing
+- Black box testing
+- Property-based testing
+- Stress testing
+- Compatibility testing
+- Security testing
+- Load testing
